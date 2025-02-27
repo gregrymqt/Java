@@ -151,7 +151,7 @@ public class Main {
       }
       
       int matrizinv[][]= new int[coluna][linha];
-      
+       
       for(int l=0; l<linha; l++) { 
     	for(int c=0; c<coluna; c++) {   		
     		matrizinv[c][l] = matriz[l][c];
