@@ -11,9 +11,9 @@ public class Main {
 		
 		while(contador<1) {
 			
-			System.out.println("Escolha uma opcao entre 1 a 3");
+			System.out.println("Escolha uma opcao entre 1 a 4");
 			System.out.println("1-Somar a Matriz");
-			System.out.println("2-Multiplicação de Matriz por Escala");
+			System.out.println("2-Cadastro para Login2");
 			System.out.println("3-Transposição de Matriz");
 			System.out.println("4 - Sair");
 			 
@@ -49,6 +49,7 @@ public class Main {
 
     	Scanner scan = new Scanner(System.in);
 
+    	 System.out.println(); 
             System.out.println("Preencha a matriz 3x3:");
             for (int i = 0; i < 3; i++) { 
                 for (int j = 0; j <3; j++) { 
@@ -78,6 +79,7 @@ public class Main {
 
             System.out.println("A soma da 1 matriz: "+soma);
             System.out.println("A soma da 2 matriz: "+soma2);
+            System.out.println(); 
 
         
     }
@@ -86,29 +88,35 @@ public class Main {
     	Scanner scan3 = new Scanner(System.in);
     	String [][] matriz = new String[6][2]; 
     	
+    	System.out.println(); 
     	System.out.println("Cadastro para Login");
     	
     	for(int l = 0 ;l < 6; l++) {
     		for(int c = 0 ; c < 2; c++) {
     			if (c == 0) {
+    				System.out.println(); 
                     System.out.println("Digite o Email");
                 } else {
+                	System.out.println(); 
                     System.out.println("Digite a senha");
                 }
     			matriz[l][c] = scan3.nextLine();
     		}	
     	}
     	
+    	System.out.println(); 
     	System.out.println("Digite o email que você cadastrou:");
         String email = scan3.nextLine();
         while (email.isEmpty()) {
+        	System.out.println(); 
             System.out.println("O email não pode estar vazio. Digite novamente:");
             email = scan3.nextLine();
         }
         
+        System.out.println(); 
         System.out.println("Digite a senha que você cadastrou:");
         String senha = scan3.nextLine();
-        while (senha.isEmpty()) {
+        while (senha.isEmpty()) {System.out.println(); 
             System.out.println("A senha não pode estar vazia. Digite novamente:");
             senha = scan3.nextLine();
         }
@@ -120,10 +128,13 @@ public class Main {
     			break;
     		}}
     		
+    		System.out.println(); 
     		if(login) {
     			System.out.println("Login Certo!");
+    			 System.out.println(); 
     		}else {
     			System.out.println("Email ou senha errados!");
+    			 System.out.println(); 
     		}
     
     	
@@ -135,9 +146,11 @@ public class Main {
      
     	System.out.println("Qual o tamanho da linha que você deseja?");
         int linha = scan4.nextInt();
+        System.out.println(); 
         
         System.out.println("Qual o tamanho da coluna que você deseja?");
         int coluna = scan4.nextInt();
+        System.out.println(); 
         
     int matriz[][] = new int[linha][coluna];
       
